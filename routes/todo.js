@@ -1,6 +1,7 @@
 const express = require('express')
 const router = express.Router()
-const todo = require(.../models/todo)
+const todo = require('.../models/todo')
+const {getAllTodo} = require("../controllers/todo")
 
 // getting all todos
 router.get('/', async (req,res) => {
