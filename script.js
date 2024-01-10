@@ -26,3 +26,27 @@ function updateList() {
         todos.appendChild(listItem);
     });
 }
+
+fetch('DATABASE_URL', {
+  method: 'POST',
+  headers: {
+    'Content-Type': 'application/json',
+  },
+  body: JSON.stringify({
+    todo: 'hi',
+    done: true,
+  }),
+})
+  .then(response => {
+    if (!response.ok) {
+      throw new Error(`HTTP error! Status: ${response.status}`);
+    }
+    
+    return response.json();
+  })
+  .then(data => {
+    console.log(data);
+  })
+  .catch(error => {
+    console.error('Error:', error);
+  });

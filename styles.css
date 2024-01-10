@@ -33,6 +33,16 @@ body{
 }
 
 .tick {
-    background:url(images/icons8-tick-mark-50.png);
+    height: 40px;
+    width: 45px;
+    outline: none;
     
+}
+
+.tick:hover {
+    cursor: pointer;
+}
+.field {
+    height: 36px;
+    width:250px;
 }

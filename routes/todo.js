@@ -17,8 +17,8 @@ router.get('/:id', getTodo,(req,res) => {
 //creating one
 router.post('/', async(req,res) => {
   const todo = new todoModel({
-      work: req.body.work,
-      completed: req.body.completed
+      todo: req.body.work,
+      done: req.body.completed
   })
   try {
       const newTodo = await todo.save()
@@ -30,11 +30,11 @@ router.post('/', async(req,res) => {
 
 // updating
 router.patch('/:id',getTodo, async (req,res)=> {
-  if (req.body.work != null) {
-      res.todo.work = req.body.work
+  if (req.body.todo != null) {
+      res.todo.todo = req.body.todo
   }
-  if (req.body.completed != null){
-      res.todo.completed = req.body.completed
+  if (req.body.done != null){
+      res.todo.done = req.body.done
       
   }
   try {
