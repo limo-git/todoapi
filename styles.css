@@ -1,0 +1,38 @@
+*{
+    margin:none;
+  
+}
+
+body{
+    background-image: url(images/229124.jpg);
+    background-size: cover;
+}
+
+.head{
+    font-size: 54px;
+    font-weight: 600;
+    font-family: sans-serif;
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.create{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    box-sizing: border-box;
+    margin-left:860px;
+    width: 400px;
+    background-color: white;
+    height: 70px;
+    border: 2px solid white;
+}
+
+.tick {
+    background:url(images/icons8-tick-mark-50.png);
+    
+}
